@@ -3,7 +3,17 @@ import React, { useState, useContext } from 'react';
 const AppContext = React.createContext();
 
 const AppProvider = ({ children }) => {
-  return <AppContext.Provider value={{}}>{children}</AppContext.Provider>;
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
+  const toggleSidebar = () => {
+    setIsSidebarOpen(!isSidebarOpen);
+  };
+
+  return (
+    <AppContext.Provider value={{ toggleSidebar }}>
+      {children}
+    </AppContext.Provider>
+  );
 };
 
 //custom hook
