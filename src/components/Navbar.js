@@ -6,7 +6,7 @@ import { FaBars } from 'react-icons/fa';
 import { useGlobalContext } from '../context';
 
 const Navbar = () => {
-  const { toggleSidebar } = useGlobalContext();
+  const { toggleSidebar, isSidebarOpen } = useGlobalContext();
   return (
     <nav className='navbar-container'>
       <Link to='/'>
@@ -29,9 +29,15 @@ const Navbar = () => {
           })}
         </ul>
       </div>
-      <button type='button' className='nav-toggle-btn' onClick={toggleSidebar}>
-        <FaBars />
-      </button>
+      {!isSidebarOpen && (
+        <button
+          type='button'
+          className='nav-toggle-btn'
+          onClick={toggleSidebar}
+        >
+          <FaBars />
+        </button>
+      )}
     </nav>
   );
 };

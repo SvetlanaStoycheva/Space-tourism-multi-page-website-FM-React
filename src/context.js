@@ -8,9 +8,12 @@ const AppProvider = ({ children }) => {
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
   };
+  const closeSidebar = () => {
+    setIsSidebarOpen(false);
+  };
 
   return (
-    <AppContext.Provider value={{ toggleSidebar }}>
+    <AppContext.Provider value={{ toggleSidebar, isSidebarOpen, closeSidebar }}>
       {children}
     </AppContext.Provider>
   );
