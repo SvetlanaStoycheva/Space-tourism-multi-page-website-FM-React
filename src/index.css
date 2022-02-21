@@ -68,7 +68,8 @@ a {
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5 {
   letter-spacing: var(--spacing);
   text-transform: uppercase;
   line-height: 1.25;
@@ -89,8 +90,11 @@ h4 {
   font-size: 32px;
 }
 h5 {
+  color: var(--clr-primary-light-blue);
   font-size: 28px;
   letter-spacing: 4.75;
+  text-transform: uppercase;
+  font-family: var(--ff-subheadings);
 }
 .subheading1 {
   font-family: var(--ff-subheadings);
@@ -112,8 +116,10 @@ h5 {
 }
 p {
   margin-bottom: 1.25rem;
-  font-family: var(--ff-primary);
+  font-family: var(--ff-subheadings);
   color: var(--clr-primary-white);
+  letter-spacing: var(--spacing);
+  line-height: 1.6rem;
 }
 .btn {
   background: var(--clr-primary-soft-blue);
@@ -204,6 +210,9 @@ Navbar
     border-bottom: 4px solid transparent;
     line-height: 6.5rem;
   }
+  .navbar-link-active {
+    border-bottom: 3px solid hsl(0, 4%, 91%);
+  }
   .navbar-link-number {
     display: none;
   }
@@ -260,7 +269,7 @@ Navbar
   right: 0;
   height: 100vh;
   width: 70vw;
-  background: rgba(39, 38, 46, 0.7);
+  background: rgba(33, 33, 39, 0.9);
   padding: 2rem;
   transition: var(--transition);
   transform: translate(-100%);
@@ -302,15 +311,71 @@ HomePage
   width: 100vw;
   height: 90vh;
   background: url('./assets/home/background-home-mobile.jpg') center/cover;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+.explore-btn {
+  font-family: var(--ff-primary);
+  letter-spacing: 0.1rem;
+  font-size: 1.2rem;
+  width: 11rem;
+  height: 11rem;
+  border-radius: 50%;
+  border: transparent;
+  cursor: pointer;
+  transition: var(--transition);
+  margin-bottom: 3rem;
+  border: 2.2rem solid transparent;
+}
+
+.explore-btn:hover {
+  border: 2rem solid var(--clr-primary-light-blue);
+}
+.home-page-text-container {
+  padding: 2rem;
+  padding-top: 0;
+}
+.home-page-text-container p {
+  color: var(--clr-primary-light-blue);
+  text-align: center;
+}
+.home-page-text-container h2 {
+  text-align: center;
+}
+.home-page-text-container h5 {
+  text-align: center;
 }
 
 @media screen and (min-width: 750px) {
   .home-page-container {
     background: url('./assets/home/background-home-tablet.jpg') center/cover;
   }
+  .home-page-text-container {
+    padding: 2rem 6rem;
+  }
 }
 @media screen and (min-width: 950px) {
   .home-page-container {
     background: url('./assets/home/background-home-desktop.jpg') center/cover;
+  }
+  .home-page-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+    padding: 4rem;
+  }
+  .home-page-text-container {
+    padding: 0;
+    width: 40vw;
+  }
+  .home-page-text-container p {
+    text-align: left;
+  }
+  .home-page-text-container h2 {
+    text-align: left;
+  }
+  .home-page-text-container h5 {
+    text-align: left;
   }
 }
