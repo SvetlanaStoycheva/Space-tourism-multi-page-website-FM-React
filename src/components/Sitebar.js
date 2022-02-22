@@ -15,7 +15,7 @@ const Sitebar = () => {
         {links.map((l) => {
           const { id, url, text, number } = l;
           return (
-            <li key={id}>
+            <li key={id} onClick={closeSidebar}>
               <Link to={url}>
                 <p className='sidebar-link subheading1'>
                   <span className='sidebar-link-number'>{number}</span> {text}

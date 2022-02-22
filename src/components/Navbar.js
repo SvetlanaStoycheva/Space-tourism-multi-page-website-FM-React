@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../assets/shared/logo.svg';
 import { links } from '../utils';
@@ -7,8 +7,13 @@ import { useGlobalContext } from '../context';
 
 const Navbar = () => {
   const { toggleSidebar, isSidebarOpen } = useGlobalContext();
-  const [activeBtn, setActiveBtn] = useState(1);
 
+  //
+  const currentPath = window.location.pathname;
+  const [activeBtn, setActiveBtn] = useState(currentPath);
+  useEffect(() => {
+    setActiveBtn(currentPath);
+  }, [currentPath]);
   return (
     <nav className='navbar-container'>
       <Link to='/'>
@@ -20,11 +25,11 @@ const Navbar = () => {
           {links.map((l) => {
             const { id, url, text, number } = l;
             return (
-              <li key={id} onClick={() => setActiveBtn(id)}>
+              <li key={id} onClick={() => setActiveBtn(url)}>
                 <Link to={url}>
                   <p
                     className={
-                      activeBtn === id
+                      activeBtn === url
                         ? 'navbar-link subheading1 navbar-link-active'
                         : 'navbar-link subheading1'
                     }

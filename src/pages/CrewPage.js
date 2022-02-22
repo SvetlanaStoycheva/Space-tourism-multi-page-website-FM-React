@@ -1,7 +1,7 @@
 import React from 'react';
 
 const CrewPage = () => {
-  return <div></div>;
+  return <section className="crew-page-container"></section>
 };
 
 export default CrewPage;
