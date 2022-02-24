@@ -9,9 +9,6 @@ function DestinationPage() {
     acc.push(curr.name);
     return acc;
   }, []);
-  console.log(name, buttons);
-
-  //set active css on the clicket button, like moon;
 
   return (
     <section className='destination-page-container'>

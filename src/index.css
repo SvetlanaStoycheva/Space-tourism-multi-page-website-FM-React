@@ -403,7 +403,6 @@ DestinationPage
 
 .destination-page-container {
   width: 100vw;
-  /* height: 90vh; */
   background: url('./assets/destination/background-destination-mobile.jpg')
     center/cover;
   padding: 2rem;
@@ -546,6 +545,9 @@ DestinationPage
   .destination-page-inner-container {
     padding: 2rem 5rem;
   }
+  .distance-time-container {
+    width: 25rem;
+  }
 }
 
 /*
@@ -556,9 +558,70 @@ CrewPage
 
 .crew-page-container {
   width: 100vw;
-  height: 90vh;
   background: url('./assets/crew/background-crew-mobile.jpg') center/cover;
+  padding: 2rem;
 }
+.meet-crew {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 3rem;
+}
+.meet-crew span {
+  color: hsl(240, 0%, 43%);
+}
+.crew-page-img-container {
+  display: grid;
+  align-content: center;
+}
+.crew-img {
+  height: 16rem;
+  margin: 0 auto;
+}
+.crew-line {
+  border-bottom: solid 2px hsl(240, 12%, 25%);
+}
+.crew-btn {
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+  border: transparent;
+  color: hsl(240, 6%, 45%);
+  background: hsl(240, 6%, 45%);
+  cursor: pointer;
+}
+.active-crew-btn {
+  color: var(--clr-primary-white);
+  background: var(--clr-primary-white);
+}
+.crew-info-container {
+  display: grid;
+  align-content: center;
+}
+.crew-btns-container-small-screen,
+.crew-btns-container-big-screen {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 12rem;
+  margin: 2rem auto;
+}
+.crew-btns-container-big-screen {
+  display: none;
+}
+.crew-role {
+  text-align: center;
+  letter-spacing: 0.15rem;
+  color: hsl(240, 6%, 45%);
+}
+.crew-page-name {
+  text-align: center;
+}
+.crew-bio {
+  text-align: center;
+  color: var(--clr-primary-light-blue);
+  margin: 1rem 0;
+  padding-bottom: 3rem;
+}
+
 @media screen and (min-width: 750px) {
   .crew-page-container {
     background: url('./assets/crew/background-crew-tablet.jpg') center/cover;
@@ -578,10 +641,10 @@ TechnologyPage
 
 .technology-page-container {
   width: 100vw;
-  height: 90vh;
   background: url('./assets/technology/background-technology-mobile.jpg')
     center/cover;
 }
+
 @media screen and (min-width: 750px) {
   .technology-page-container {
     background: url('./assets/technology/background-technology-tablet.jpg')
