@@ -8,6 +8,8 @@ import mark from './assets/crew/image-mark-shuttleworth.png';
 import victor from './assets/crew/image-victor-glover.png';
 import anousheh from './assets/crew/image-anousheh-ansari.png';
 //
+import launch1 from './assets/technology/image-launch-vehicle-portrait.jpg';
+import launch2 from './assets/technology/image-launch-vehicle-landscape.jpg';
 
 export const destinations = [
   {
@@ -106,8 +108,8 @@ export const technology = [
   {
     name: 'Launch vehicle',
     images: {
-      portrait: './assets/technology/image-launch-vehicle-portrait.jpg',
-      landscape: './assets/technology/image-launch-vehicle-landscape.jpg',
+      portrait: launch1,
+      landscape: launch2,
     },
     description:
       "A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!",
