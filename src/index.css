@@ -588,6 +588,7 @@ CrewPage
   color: hsl(240, 6%, 45%);
   background: hsl(240, 6%, 45%);
   cursor: pointer;
+  margin-left: 1rem;
 }
 .active-crew-btn {
   color: var(--clr-primary-white);
@@ -601,6 +602,8 @@ CrewPage
 .crew-btns-container-big-screen,
 .crew-btns-container-small-screen {
   display: grid;
+  align-items: center;
+  justify-content: center;
   grid-template-columns: repeat(4, 1fr);
   width: 12rem;
   margin: 2rem auto;
@@ -718,16 +721,133 @@ TechnologyPage
   background: url('./assets/technology/background-technology-mobile.jpg')
     center/cover;
 }
-
+.space-launch {
+  text-align: center;
+  padding: 2rem;
+}
+.space-launch span {
+  color: hsl(240, 0%, 43%);
+}
+.technology-img-portrait {
+  display: none;
+}
+.technology-img-landscape {
+  width: 100vw;
+}
+.technology-btn {
+  color: var(--clr-primary-white);
+  background: var(--clr-primary-dark-blue);
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  border: 1px solid hsl(240, 0%, 43%);
+  cursor: pointer;
+}
+.technology-btn-number {
+  margin-bottom: 0;
+}
+.active-technology-btn {
+  background: var(--clr-primary-white);
+}
+.active-technology-btn p {
+  color: var(--clr-primary-dark-blue);
+}
+.technology-btns-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 1rem;
+  width: 10rem;
+  margin: 2rem auto;
+}
+.technology-role {
+  color: var(--clr-primary-light-blue);
+  text-align: center;
+  margin-top: 1rem;
+}
+.technology-page-name {
+  text-align: center;
+}
+.technology-bio {
+  color: var(--clr-primary-light-blue);
+  text-align: center;
+}
+.technology-info-container {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 4rem;
+}
 @media screen and (min-width: 750px) {
   .technology-page-container {
     background: url('./assets/technology/background-technology-tablet.jpg')
       center/cover;
+  }
+  .technology-info-container {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+  .space-launch {
+    text-align: left;
+    font-size: 1.5rem;
   }
 }
 @media screen and (min-width: 950px) {
   .technology-page-container {
     background: url('./assets/technology/background-technology-desktop.jpg')
       center/cover;
+    height: 90vh;
+    max-width: var(--max-width);
+  }
+  .technology-img-portrait {
+    display: inline-block;
+    width: 35vw;
+  }
+  .technology-img-landscape {
+    display: none;
+  }
+  .technology-page-inner-container {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-areas: 'a b';
+    align-items: center;
+    justify-content: center;
+  }
+  .technology-page-img-container {
+    grid-area: b;
+  }
+  .technology-info-container {
+    grid-area: a;
+    width: 60vw;
+  }
+  .technology-info-container {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    padding-bottom: 0;
+    padding-left: 3rem;
+  }
+  .technology-btns-container {
+    grid-template-columns: 1fr;
+    column-gap: 1rem;
+    width: 5rem;
+    height: 12rem;
+    margin: 0;
+  }
+  .technology-role {
+    text-align: left;
+    margin-top: 0;
+    font-size: 1.2rem;
+  }
+  .technology-page-name {
+    text-align: left;
+    font-size: 1.8rem;
+  }
+  .technology-bio {
+    text-align: left;
+  }
+}
+@media screen and (min-width: 1150px) {
+  .technology-info-container {
+    width: 60vw;
+    padding-left: 6rem;
   }
 }

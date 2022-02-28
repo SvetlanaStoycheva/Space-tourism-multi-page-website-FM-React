@@ -12,7 +12,7 @@ const CrewPage = () => {
 
   return (
     <section className='crew-page-container'>
-      <h4 className='subheading1' className='meet-crew'>
+      <h4 className='subheading1 meet-crew'>
         <span>02</span> meet your crew
       </h4>
       <div className='crew-page-inner-container'>

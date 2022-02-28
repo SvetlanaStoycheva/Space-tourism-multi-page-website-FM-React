@@ -12,7 +12,7 @@ function DestinationPage() {
 
   return (
     <section className='destination-page-container'>
-      <h4 className='subheading1' className='pick-destination'>
+      <h4 className='subheading1 pick-destination'>
         <span>01</span> pick your destination
       </h4>
       <div className='destination-page-inner-container'>
