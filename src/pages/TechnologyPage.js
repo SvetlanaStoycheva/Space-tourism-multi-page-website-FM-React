@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { technology, destinations } from '../data';
+import { technology } from '../data';
 
 const TechnologyPage = () => {
   const [activeTechnology, setActiveTechnology] = useState(technology[0]);
@@ -12,7 +12,7 @@ const TechnologyPage = () => {
 
   return (
     <section className='technology-page-container'>
-      <h4 className='subheading1' className='space-launch'>
+      <h4 className='subheading1 space-launch'>
         <span>03</span> space launch 101
       </h4>
       <div className='technology-page-inner-container'>

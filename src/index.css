@@ -317,7 +317,6 @@ HomePage
   justify-items: center;
 }
 .explore-btn {
-  /* position: relative; */
   font-family: var(--ff-primary);
   letter-spacing: 0.1rem;
   font-size: 1.2rem;
@@ -328,14 +327,15 @@ HomePage
   cursor: pointer;
   transition: var(--transition);
   margin-bottom: 3rem;
-  border: 2.2rem solid transparent;
+  border: 2rem solid transparent;
 }
 .explore-btn:hover {
-  border: 2.2rem solid var(--clr-primary-light-blue);
+  border: 2rem solid var(--clr-primary-light-blue);
 }
 /* .explore-btn::before {
   content: '';
   position: absolute;
+  display: block;
   top: 0;
   left: 0;
   width: 20rem;
