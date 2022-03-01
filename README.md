@@ -1,6 +1,6 @@
 ## Space tourism multi-page website // Frontend Mentor Project // React and CSS
 
-- [see project]()
+- [see project](https://sweta-space-tourism-website-fm.netlify.app)
 - The project is a multi-page website about space travel
 - data is in local data.json file
 
@@ -18,6 +18,10 @@
 <br/>
 <p align-items: center>
     <img src='./readme-images/Screenshot-space-tourism-04.png' width='250'>
+</p>
+<br/>
+<p align-items: center>
+    <img src='./readme-images/Screenshot-space-tourism-05.png' width='250'>
 </p>
 <br/>
 
