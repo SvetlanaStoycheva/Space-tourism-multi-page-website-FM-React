@@ -28,3 +28,5 @@
 #### Comments about the code
 
 #### Helpers
+
+https://programmerah.com/hmr-waiting-for-update-signal-from-wds-33648/
