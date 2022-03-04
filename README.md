@@ -1,6 +1,6 @@
 ## Space tourism multi-page website // Frontend Mentor Project // React and CSS
 
-- [see project](https://sweta-space-tourism-website-fm.netlify.app)
+- [see project](https://sweta-space-tourism-fm.netlify.app)
 - The project is a multi-page website about space travel
 - data is in local data.json file
 
@@ -29,4 +29,5 @@
 
 #### Helpers
 
+Try to fix worning in the console: [HMR] Waiting for update signal from WDS…
 https://programmerah.com/hmr-waiting-for-update-signal-from-wds-33648/
