@@ -27,6 +27,8 @@
 
 #### Comments about the code
 
+- Downloaded on Netlify manually. Continuous deployment shows blank white page.
+
 #### Helpers
 
 Try to fix worning in the console: [HMR] Waiting for update signal from WDS…
